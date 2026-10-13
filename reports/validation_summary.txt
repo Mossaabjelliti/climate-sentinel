@@ -1,0 +1,51 @@
+Normale 1991-2020 : pluie annuelle moyenne 109.4 mm (ecart-type 53.1), Tmean 20.12 C
+
+SPI-12 en decembre (cumul de l'annee civile), annees avec SPI-12 <= -1 :
+  1981: pluie annuelle   38.4 mm | SPI-12 = -1.75 (secheresse severe)
+  2000: pluie annuelle   37.6 mm | SPI-12 = -1.78 (secheresse severe)
+  2001: pluie annuelle   40.4 mm | SPI-12 = -1.67 (secheresse severe)
+  2008: pluie annuelle   51.5 mm | SPI-12 = -1.27 (secheresse moderee)
+  2010: pluie annuelle   59.6 mm | SPI-12 = -1.02 (secheresse moderee)
+  2013: pluie annuelle   50.1 mm | SPI-12 = -1.32 (secheresse moderee)
+  2016: pluie annuelle   52.5 mm | SPI-12 = -1.24 (secheresse moderee)
+  2021: pluie annuelle   39.5 mm | SPI-12 = -1.70 (secheresse severe)
+  2022: pluie annuelle   45.4 mm | SPI-12 = -1.48 (secheresse moderee)
+
+Rang des annees les plus seches (pluie annuelle, 1980-2025) :
+  2000:   37.6 mm | SPI-12 dec = -1.78
+  1981:   38.4 mm | SPI-12 dec = -1.75
+  2021:   39.5 mm | SPI-12 dec = -1.70
+  2001:   40.4 mm | SPI-12 dec = -1.67
+  2022:   45.4 mm | SPI-12 dec = -1.48
+  2013:   50.1 mm | SPI-12 dec = -1.32
+  2008:   51.5 mm | SPI-12 dec = -1.27
+  2016:   52.5 mm | SPI-12 dec = -1.24
+
+Periode 2000-2001 : SPI-12 min -2.24 (2001-10), 14 mois sur 24 a SPI-12 <= -1
+Periode 2021-2022 : SPI-12 min -1.70 (2021-12), 9 mois sur 24 a SPI-12 <= -1
+
+Chaleur (z_tmax >= 2) : jours par annee, moyenne par decennie
+  1980s :   8.6 jours z>=2 |   2.3 jours en canicule (>=3 j) |  13.2 jours Tmax>=40
+  1990s :   8.9 jours z>=2 |   1.2 jours en canicule (>=3 j) |  14.5 jours Tmax>=40
+  2000s :  12.5 jours z>=2 |   3.6 jours en canicule (>=3 j) |  15.8 jours Tmax>=40
+  2010s :  14.3 jours z>=2 |   4.3 jours en canicule (>=3 j) |  15.4 jours Tmax>=40
+  2020s :  20.8 jours z>=2 |   6.5 jours en canicule (>=3 j) |  22.8 jours Tmax>=40
+
+Annees avec le plus de jours de canicule :
+  2010: 19 jours
+  2021: 11 jours
+  2002: 10 jours
+  2023: 9 jours
+  2022: 8 jours
+  2016: 6 jours
+
+Part des jours a z_tmax>=2 sur la reference : 3.29% (attendu ~2.3 % si loi normale ; Tmax est asymetrique a droite)
+Ete 2026 (juin-aout) : 16 jours z>=2 sur 92, 12 jours en canicule, 1 jours z>=3
+
+Isolation Forest : 202 jours signales (1 % de la reference) ; 48 d'entre eux sont aussi des jours z_tmax>=2 ; 154 sont des anomalies que le z-score seul ne voit pas.
+  Exemples d'anomalies multivariees sans alerte chaleur :
+   1997-09-06: Tmax 23.0 C, pluie 27.9 mm, z_hr +2.4, z_vent -0.2
+   2017-04-09: Tmax 14.6 C, pluie 44.0 mm, z_hr +2.6, z_vent +2.2
+   1990-01-21: Tmax 12.5 C, pluie 50.6 mm, z_hr +1.8, z_vent +3.1
+   2023-05-09: Tmax 18.6 C, pluie 10.5 mm, z_hr +2.2, z_vent +2.3
+   1991-05-13: Tmax 16.2 C, pluie 3.2 mm, z_hr +2.1, z_vent +2.9
